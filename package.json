@@ -1,0 +1,33 @@
+{
+  "name": "karma-preamble",
+  "version": "0.1.0",
+  "description": "A Karma plugin. Adapter for the Preamble testing framework.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jeffschwartz/karma-preamble.git"
+  },
+  "keywords": [
+    "karma-plugin",
+    "karma-adapter",
+    "preamble"
+  ],
+  "author": "Jeffrey Schwartz <jefftschwartz@gmail.com>",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.6",
+    "grunt-karma": "~0.4",
+    "grunt-bump": "~0.0.7",
+    "grunt-npm": "~0.0.2",
+    "grunt-auto-release": "~0.0.2"
+  },
+  "peerDependencies": {
+    "karma": ">=0.9",
+  },
+  "license": "MIT",
+  "contributors": []
+}

@@ -1,0 +1,6 @@
+(function(window) {
+
+%CONTENT%
+
+window.__karma__.start = createStartFn((window.__karma__);
+})(window);

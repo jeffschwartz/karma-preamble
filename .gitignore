@@ -1,0 +1,4 @@
+lib/adapter.js
+node_modules
+**/*.swp
+**/*.swo
