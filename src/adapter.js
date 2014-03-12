@@ -16,6 +16,9 @@ var createStartFn = function(tc, preambleEnvPassedIn) {
 
         //Get Preamble's pubsub...
         var runner = preambleEnvPassedIn || window.Preamble.__ext__.pubsub;
+        
+        //Get Preamble's config...
+        var config = window.Preamble.__ext__.config;
 
         //and use it to subscribe to broadcasts with a topic of "status update".
         runner.subscribe('status update', function(topic, data){
@@ -30,6 +33,7 @@ var createStartFn = function(tc, preambleEnvPassedIn) {
             //These are the status updates we are interested in.
             switch(status){
 
+                //TODO(jeff) associate these with apis on tc.
                 case 'error':
                     //An error (either a global winodw error or one thrown 
                     //by Preamble dureing the test life-cycle) has occurred.
@@ -56,6 +60,8 @@ var createStartFn = function(tc, preambleEnvPassedIn) {
 
         });
 
+        //Allow Preamble to process its queues.
+        config.autoStart = true;
     };
 
 };
