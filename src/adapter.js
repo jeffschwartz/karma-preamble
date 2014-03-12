@@ -15,7 +15,7 @@ var createStartFn = function(tc, preambleEnvPassedIn) {
     return function(){
 
         //Get Preamble's pubsub...
-        var runner = preambleEnvPassedIn || window.Preamble._ext;
+        var runner = preambleEnvPassedIn || window.Preamble.__ext__.pubsub;
 
         //and use it to subscribe to broadcasts with a topic of "status update".
         runner.subscribe('status update', function(topic, data){

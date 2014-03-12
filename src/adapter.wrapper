@@ -2,5 +2,7 @@
 
 %CONTENT%
 
+window.Preamble.__ext__.config.autoStart = false;
+
 window.__karma__.start = createStartFn((window.__karma__);
 })(window);
