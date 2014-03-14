@@ -1,3 +1,4 @@
+.tern-project
 lib/adapter.js
 node_modules
 **/*.swp
